@@ -1,0 +1,36 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the Node.js version you want to use
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npx next build
+
+      - name: Export static assets
+        run: npx next export
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}  # Set this in your repository secrets
+          account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # Set this in your repository secrets
+          project-name: 'labandserver'  # Replace with your Cloudflare Pages project name
+          directory: './out'  # This is the default output directory for next export

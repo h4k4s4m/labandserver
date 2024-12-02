@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-          api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}  # Set this in your repository secrets
-          account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # Set this in your repository secrets
-          project-name: 'labandserver'  # Replace with your Cloudflare Pages project name
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}  # Set this in your repository secrets
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # Set this in your repository secrets
+          projectName: 'labandserver'  # Replace with your Cloudflare Pages project name
           directory: './out'  # This is the default output directory for next export

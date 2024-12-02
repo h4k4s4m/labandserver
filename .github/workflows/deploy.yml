@@ -24,9 +24,6 @@ jobs:
       - name: Build the project
         run: npx next build
 
-      - name: Export static assets
-        run: npx next export
-
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:

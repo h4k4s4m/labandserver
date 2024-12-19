@@ -27,9 +27,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3.13.0
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}  # Set this in your repository secrets
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # Set this in your repository secrets
-          projectName: 'labandserver'  # Replace with your Cloudflare Pages project name
-          directory: './website/build'
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./website/build --project-name=labandserver

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 Lab and Server Project
 
-## Getting Started
+The ultimate resource hub for home lab enthusiasts and IT professionals. This repository contains everything you need to build, manage, and automate your home infrastructure.
 
-First, run the development server:
+[![Deploy Status](https://github.com/h4k4s4m/labandserver/actions/workflows/deploy.yml/badge.svg)](https://github.com/h4k4s4m/labandserver)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/labandserver)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📚 Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This repository is organized into focused components:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### /website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Our main documentation site built with Docusaurus. Contains:
+- Quick start guides
+- Hardware recommendations
+- Automation tutorials
+- Best practices
+- Configuration examples
 
-## Learn More
+[Visit Website Directory →](./website)
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Each component has its own documentation and setup instructions. Visit the respective directory for detailed information on installation and usage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Contributing
 
-## Deploy on Vercel
+We welcome contributions! Please check the contributing guidelines in each component's directory for specific instructions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ⭐ Support
+
+If you find this project helpful, please consider:
+- Giving it a star on GitHub
+- [Supporting us on Ko-fi](https://ko-fi.com/labandserver)
+- Sharing it with others

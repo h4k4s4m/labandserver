@@ -77,6 +77,18 @@ const config = {
             position: 'left',
             label: 'Parts List',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'Software',
+            position: 'left',
+            label: 'Software',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'Glossary',
+            position: 'left',
+            label: 'Glossary',
+          },
         ],
       },
       footer: {
@@ -92,6 +104,14 @@ const config = {
               {
                 label: 'Parts List',
                 to: '/parts_list/entry_level',
+              },
+              {
+                label: 'Software',
+                to: '/software/intro',
+              },
+              {
+                label: 'Glossary',
+                to: '/glossary/intro',
               },
             ],
           },

@@ -3,7 +3,7 @@
 The ultimate resource hub for home lab enthusiasts and IT professionals. This repository contains everything you need to build, manage, and automate your home infrastructure.
 
 [![Deploy Status](https://github.com/h4k4s4m/labandserver/actions/workflows/deploy.yml/badge.svg)](https://github.com/h4k4s4m/labandserver)
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/labandserver)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://github.com/h4k4s4m/labandserver/actions)
 
 ## 📚 Project Structure
 

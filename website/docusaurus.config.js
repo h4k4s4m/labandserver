@@ -97,11 +97,11 @@ const config = {
             items: [
               {
                 label: 'Quick Start',
-                to: '/quick_start/intro',
+                to: '/quick_start/getting_started/labs-and-servers',
               },
               {
                 label: 'Parts List',
-                to: '/parts_list/entry_level',
+                to: '/parts_list/Hardware Tiers/hardware-guide',
               },
               {
                 label: 'Software',

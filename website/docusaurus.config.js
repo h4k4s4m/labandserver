@@ -44,7 +44,6 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          // Remove editUrl if not needed
         },
         blog: false,
         theme: {

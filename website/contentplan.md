@@ -2,9 +2,7 @@
 
 ## 1. Getting Started
 - Introduction to Home Labs
-  - What is a homelab?
-  - What is a homeserver?
-  - Homelab vs Homeserver
+  - Homelab & Homeserver
     - Standalone server characteristics
     - Full lab environment components
     - Use case differences

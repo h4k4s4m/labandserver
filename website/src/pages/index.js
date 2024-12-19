@@ -32,7 +32,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Lab & Server: Welcome 127.0.0.1`}
+      title={`Lab & Server: Welcome 127.0.0.1 (Home)`}
       description="The ulitmate resource for home lab and server enthusiasts.">
       <HomepageHeader />
       <main>

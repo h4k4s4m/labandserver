@@ -44,6 +44,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
+          remarkPlugins: [],
+          rehypePlugins: [],
         },
         blog: false,
         theme: {
@@ -56,6 +58,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        contextualSearch: true,
+        appId: 'IJD09FO4GG',
+        apiKey: '6275b250a8e81bd6c5dda9ba9b42867f',
+        indexName: 'labandserver_com_ijd09fo4gg_pages',
+      },
+
       navbar: {
         title: 'Lab & Server',
         logo: {

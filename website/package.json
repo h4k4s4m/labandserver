@@ -15,10 +15,11 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.6.3",
+    "@docusaurus/mdx-loader": "^3.6.3",
     "@docusaurus/preset-classic": "3.6.3",
-    "@mdx-js/react": "^3.0.0",
+    "@docusaurus/theme-classic": "^3.6.3",
+    "@docusaurus/theme-search-algolia": "^3.6.3",
     "clsx": "^2.0.0",
-    "mdx-embed": "^1.1.2",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

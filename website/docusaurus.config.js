@@ -114,15 +114,19 @@ const config = {
               },
               {
                 label: 'Hardware',
-                to: '/hardware/Hardware Tiers/hardware-guide',
+                to: '/hardware/Hardware Options/comparison',
               },
               {
                 label: 'Software',
-                to: '/software/intro',
+                to: '/software/operating-system',
               },
               {
                 label: 'Glossary',
                 to: '/glossary/intro',
+              },
+              {
+                label: 'Server Quiz',
+                to: '/server-quiz',
               },
             ],
           },

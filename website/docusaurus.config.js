@@ -80,9 +80,9 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'Parts_List',
+            sidebarId: 'Hardware',
             position: 'left',
-            label: 'Parts List',
+            label: 'Hardware',
           },
           {
             type: 'docSidebar',
@@ -109,8 +109,8 @@ const config = {
                 to: '/quick_start/getting_started/labs-and-servers',
               },
               {
-                label: 'Parts List',
-                to: '/parts_list/Hardware Tiers/hardware-guide',
+                label: 'Hardware',
+                to: '/hardware/Hardware Tiers/hardware-guide',
               },
               {
                 label: 'Software',

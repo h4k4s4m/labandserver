@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: "Homelabs & Homeservers 🚀🖥️"
 description: "Discover the exciting world of homelabs and homeservers and start your tech journey today!"
 toc_min_heading_level: 2
@@ -8,7 +8,6 @@ toc_max_heading_level: 3
 
 import styles from '../../../src/css/styles.module.css';
 import TOCInline from '@theme/TOCInline';
-import ReadyToStart from '../../../src/components/ReadyToStart';
 
 # Understanding Your Home Tech Setup 🚀
 
@@ -167,4 +166,3 @@ Many homelab enthusiasts start with just a Raspberry Pi ($35) or an old laptop. 
 Remember: Start small, grow gradually!
 :::
 
-<ReadyToStart />

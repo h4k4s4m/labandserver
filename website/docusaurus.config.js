@@ -35,7 +35,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -95,6 +94,11 @@ const config = {
             sidebarId: 'Glossary',
             position: 'left',
             label: 'Glossary',
+          },
+          {
+            to: '/server-quiz',
+            label: 'Server Quiz',
+            position: 'left',
           },
         ],
       },

@@ -1,195 +1,172 @@
 ---
 sidebar_position: 2
 title: "Operating Systems for Home Servers ⚙️"
-description: "Choosing the right operating system for your home server."
+description: "A comprehensive comparison of operating systems for your home server."
 toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
 import styles from '../../src/css/styles.module.css';
-import TOCInline from '@theme/TOCInline';
 
-# Operating System Options for Home Servers 🚀
+# Choosing a Home Server Operating System 🚀
 
-<!-- <TOCInline toc={toc} minHeadingLevel={2} maxHeadingLevel={3} /> -->
+Welcome to our comprehensive guide on choosing the right operating system for your home server. We'll explore the major options and help you make an informed decision.
 
-Welcome to the world of operating systems for home servers! Let's explore the different types of operating systems and their key features.
+## 🐧 Linux-Based Options
 
-:::tip What you'll learn
-Understand the differences between various operating systems and their use cases.
-:::
+### Proxmox VE
+<div className={styles.card}>
+- **Type**: Hypervisor + Container Platform
+- **Best For**: Virtualization and container management
+- **Key Features**:
+  - Type 1 hypervisor (bare metal)
+  - KVM virtualization
+  - LXC container support
+  - Web-based management interface
+  - Built-in backup solutions
+- **Considerations**:
+  - Steeper learning curve
+  - Requires dedicated machine
+  - Enterprise features may require subscription
+</div>
 
-<img 
-  src="../../img/homelab-hero.jpg" 
-  alt="Modern tech setup showing servers and networking equipment" 
-  loading="eager" 
-  className={styles.heroImage}
-/>
+### TrueNAS SCALE
+<div className={styles.card}>
+- **Type**: NAS-focused Linux distribution
+- **Best For**: Network storage and data management
+- **Key Features**:
+  - ZFS file system
+  - Built-in virtualization
+  - Docker container support
+  - Extensive plugin ecosystem
+  - Web-based management
+- **Considerations**:
+  - RAM-hungry due to ZFS
+  - Storage-focused design
+</div>
 
-## 🔄 Operating System Options
+### Ubuntu Server
+<div className={styles.card}>
+- **Type**: General-purpose server OS
+- **Best For**: Beginners to Linux servers
+- **Key Features**:
+  - User-friendly installation
+  - Large software repository
+  - Regular LTS releases
+  - Strong community support
+  - Snap package support
+- **Considerations**:
+  - More resource overhead than Debian
+  - Some controversy over Snap packages
+</div>
+
+### Debian
+<div className={styles.card}>
+- **Type**: General-purpose server OS
+- **Best For**: Stability and reliability
+- **Key Features**:
+  - Extremely stable
+  - Minimal resource usage
+  - Huge software repository
+  - Conservative update policy
+- **Considerations**:
+  - Older package versions
+  - Less beginner-friendly
+</div>
+
+## 🪟 Windows Options
+
+### Windows Server
+<div className={styles.card}>
+- **Type**: Enterprise server OS
+- **Best For**: Windows-centric environments
+- **Key Features**:
+  - Active Directory
+  - Hyper-V virtualization
+  - Remote Desktop Services
+  - PowerShell automation
+- **Considerations**:
+  - Expensive licensing
+  - Higher resource requirements
+  - Limited container support
+</div>
+
+### Windows 10/11
+<div className={styles.card}>
+- **Type**: Desktop OS with server capabilities
+- **Best For**: Simple file sharing and media servers
+- **Key Features**:
+  - Familiar interface
+  - Easy file sharing
+  - WSL for Linux tools
+  - Hardware compatibility
+- **Considerations**:
+  - Not designed for server workloads
+  - Limited concurrent connections
+</div>
+
+## 🤔 How to Choose
+
+Consider these factors when selecting your OS:
 
 <div className={styles.comparisonGrid}>
   <div className={styles.card}>
-    <h3>🧱 Proxmox VE</h3>
-    <p>Proxmox Virtual Environment is a powerful open-source server virtualization platform. It's ideal for:</p>
-    <ul>
-      <li>Running multiple virtual machines and containers</li>
-      <li>Centralized management of your home server resources</li>
-      <li>Experimenting with different operating systems</li>
-      <li>Creating a robust and scalable home lab</li>
-    </ul>
+    <h3>Use Case Priority</h3>
+    - **Storage Focus**: TrueNAS SCALE
+    - **Virtualization**: Proxmox VE
+    - **General Purpose**: Ubuntu/Debian
+    - **Windows Services**: Windows Server
   </div>
+  
   <div className={styles.card}>
-    <h3>🐧 Debian</h3>
-     <p>Debian is a stable and versatile Linux distribution, well-suited for home servers due to its:</p>
-    <ul>
-      <li>Reliability and security</li>
-      <li>Extensive software repository</li>
-      <li>Flexibility for various server applications</li>
-       <li>Strong community support</li>
-    </ul>
-  </div>
-    <div className={styles.card}>
-    <h3>💻 Windows</h3>
-    <p>Windows can also be used for home servers, especially if you're already familiar with the ecosystem. It's suitable for:</p>
-    <ul>
-      <li>Running Windows-specific applications</li>
-      <li>Gaming servers</li>
-      <li>Centralized file storage</li>
-      <li>Easy setup for users familiar with Windows</li>
-    </ul>
+    <h3>Resource Considerations</h3>
+    - **Minimal**: Debian
+    - **Moderate**: Ubuntu Server
+    - **Higher**: Proxmox, TrueNAS
+    - **Highest**: Windows Server
   </div>
 </div>
 
-## 🎭 Choose Your OS
+## 📊 Quick Comparison Table
 
-Consider these factors when choosing an OS for your home server:
-- **Virtualization Needs**: If you need to run multiple VMs, Proxmox is a great choice.
-- **Linux Expertise**: If you're comfortable with Linux, Debian offers great flexibility.
-- **Windows Familiarity**: If you prefer Windows, it can be a good option for a home server.
+| OS | Ease of Use | Resource Usage | Best For | Cost |
+|---|---|---|---|---|
+| Proxmox VE | ⭐⭐⭐ | 🔶🔶🔶 | Virtualization | Free/Paid |
+| TrueNAS SCALE | ⭐⭐⭐⭐ | 🔶🔶🔶🔶 | Storage | Free |
+| Ubuntu Server | ⭐⭐⭐⭐⭐ | 🔶🔶 | General Use | Free |
+| Debian | ⭐⭐⭐ | 🔶 | Stability | Free |
+| Windows Server | ⭐⭐⭐⭐ | 🔶🔶🔶🔶 | Windows Services | Paid |
 
-## 🛠️ Core Components
+:::tip Recommendation
+For beginners: Start with Ubuntu Server
+For intermediate: Consider Proxmox VE or TrueNAS SCALE
+For advanced: Debian or custom solution
+For Windows-dependent: Windows Server
+:::
 
-<div className={styles.gridContainer}>
-  <div className={`${styles.card} ${styles.gridItem}`}>
-    <h4>⚙️ Kernel</h4>
-    <ul>
-      <li>Core of the OS</li>
-      <li>Manages hardware</li>
-       <li>Provides system calls</li>
-    </ul>
-  </div>
-  <div className={`${styles.card} ${styles.gridItem}`}>
-    <h4>🎛️ Shell</h4>
-    <ul>
-      <li>Command-line interface</li>
-      <li>Interacts with the kernel</li>
-      <li>Automates tasks</li>
-    </ul>
-  </div>
-  <div className={`${styles.card} ${styles.gridItem}`}>
-    <h4>📦 File System</h4>
-    <ul>
-      <li>Organizes data</li>
-      <li>Manages storage</li>
-      <li>Provides access control</li>
-    </ul>
-  </div>
-    <div className={`${styles.card} ${styles.gridItem}`}>
-    <h4>🚀 Package Manager</h4>
-    <ul>
-      <li>Installs software</li>
-      <li>Manages dependencies</li>
-      <li>Updates applications</li>
-    </ul>
-  </div>
-</div>
-
-## 🎯 Common Use Cases
+## 🎯 Popular Use Cases
 
 <div className={styles.purposeGrid}>
   <div className={styles.card}>
-    <h3>🖥️ Servers</h3>
-    <ul>
-      <li>Web servers</li>
-      <li>Database servers</li>
-      <li>Application servers</li>
-    </ul>
+    <h3>Media Server</h3>
+    - TrueNAS SCALE
+    - Ubuntu Server
+    - Windows 10/11
   </div>
   <div className={styles.card}>
-    <h3>💻 Desktops</h3>
-    <ul>
-      <li>General computing</li>
-      <li>Productivity</li>
-      <li>Multimedia</li>
-    </ul>
+    <h3>Home Lab</h3>
+    - Proxmox VE
+    - Windows Server
+    - Ubuntu Server
   </div>
   <div className={styles.card}>
-    <h3>📱 Embedded Systems</h3>
-    <ul>
-      <li>IoT devices</li>
-      <li>Industrial control</li>
-      <li>Automotive systems</li>
-    </ul>
-  </div>
-    <div className={styles.card}>
-    <h3>☁️ Cloud Computing</h3>
-    <ul>
-      <li>Virtual machines</li>
-      <li>Containers</li>
-      <li>Cloud services</li>
-    </ul>
+    <h3>NAS</h3>
+    - TrueNAS SCALE
+    - Ubuntu Server
+    - Debian
   </div>
 </div>
 
-## 💫 Community Highlight
-<div className={styles.communityCard}>
-Many operating systems have active communities that provide support, documentation, and software.
-</div>
-
-## 🌟 Key Benefits
-
-<div className={styles.featuresGrid}>
-  <div className={styles.card}>
-    <h3>📚 Flexibility</h3>
-    <ul>
-      <li>Customizable options</li>
-      <li>Open-source nature</li>
-       <li>Adaptable to different needs</li>
-    </ul>
-  </div>
-
-  <div className={styles.card}>
-    <h3>🔒 Security</h3>
-    <ul>
-      <li>Robust security features</li>
-      <li>Regular updates</li>
-      <li>Access control</li>
-    </ul>
-  </div>
-
-  <div className={styles.card}>
-    <h3>⚡ Performance</h3>
-    <ul>
-       <li>Efficient resource management</li>
-      <li>Optimized for specific tasks</li>
-      <li>Low latency</li>
-    </ul>
-  </div>
-    <div className={styles.card}>
-    <h3>💰 Cost</h3>
-    <ul>
-      <li>Free and open-source options</li>
-      <li>Reduced licensing costs</li>
-      <li>Cost-effective solutions</li>
-    </ul>
-  </div>
-</div>
-
-:::tip Cost to Get Started
-- **Budget Start**: $35-100 (Raspberry Pi or old PC)
-- **Mid-Range**: $200-500 (Used enterprise server)
-- **Premium**: $500+ (New custom build)
-
-Remember: Start small, grow gradually!
+:::note Remember
+The "best" choice depends on your specific needs, technical expertise, and hardware capabilities.
 :::

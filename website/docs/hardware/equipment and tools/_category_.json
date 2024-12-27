@@ -1,0 +1,8 @@
+{
+  "label": "Equipment and Tools",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Essential equipment and tools for building and maintaining your homelab"
+  }
+}

@@ -1,4 +1,4 @@
-# Comprehensive Glossary of Terms for Homeserver, Homelab, Cloud, and IT
+# Glossary
 
 ## Storage
 

@@ -1,41 +1,65 @@
-# 🏠 Lab and Server Project
+# Lab & Server Website
 
-The ultimate resource hub for home lab enthusiasts and IT professionals. This repository contains everything you need to build, manage, and automate your home infrastructure.
+A comprehensive website for homelab and homeserver enthusiasts, providing information on hardware, software, and best practices.
 
-[![Deploy Status](https://github.com/h4k4s4m/labandserver/actions/workflows/deploy.yml/badge.svg)](https://github.com/h4k4s4m/labandserver/actions)
+## Website Structure
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/labandserver)
+The website consists of the following pages:
 
-## 📚 Project Structure
+- **Home (index.html)**: Introduction to homelabs and homeservers
+- **Quick Start (quickstart.html)**: Guide for beginners to get started
+- **Hardware (hardware.html)**: Information about hardware options and recommendations
+- **Software (software.html)**: Catalog of self-hosted applications
+- **Glossary (glossary.html)**: Definitions of common terms
+- **Blog (blog.html)**: Articles and tutorials
 
-This repository is organized into focused components:
+## Software Catalog Generation
 
-### /website
+The software catalog on the software.html page is generated from an Excel file (output.xlsx) using a Python script. The Excel file contains software information in the following format:
 
-Our main documentation site built with Docusaurus. Contains:
-- Quick start guides
-- Hardware recommendations
-- Automation tutorials
-- Best practices
-- Configuration examples
+```
+Title | Description | URL | Icon URL | Tags
+```
 
-[Visit Website Directory →](./website)
+For example:
+```
+qBittorrent | Fast and stable torrent client | https://www.qbittorrent.org | https://cdn.jsdelivr.net/gh/selfhst/icons/webp/qbittorrent.webp | Downloads, Torrents
+```
 
-## 🚀 Getting Started
+### How to Generate the Software Catalog
 
-Each component has its own documentation and setup instructions. Visit the respective directory for detailed information on installation and usage.
+1. Make sure you have Python installed on your system
+2. Install the required Python packages:
+   ```
+   pip install pandas openpyxl
+   ```
+3. Navigate to the scripts directory:
+   ```
+   cd scripts
+   ```
+4. Run the Python script:
+   ```
+   python generate_software_catalog.py
+   ```
+5. The script will read the output.xlsx file and generate a JavaScript file (software.js) that populates the software catalog on the software.html page
 
-## 💡 Contributing
+## Customization
 
-We welcome contributions! Please check the contributing guidelines in each component's directory for specific instructions.
+You can customize the website by:
 
-## 📝 License
+- Modifying the CSS in the styles/main.css file
+- Adding or updating content in the HTML files
+- Adding new software entries to the output.xlsx file and regenerating the software catalog
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Technologies Used
 
-## ⭐ Support
+- HTML5
+- CSS3
+- JavaScript
+- Python (for software catalog generation)
+- Pandas (Python library for Excel file processing)
 
-If you find this project helpful, please consider:
-- Giving it a star on GitHub
-- [Supporting us on Ko-fi](https://ko-fi.com/labandserver)
-- Sharing it with others
+## Credits
+
+- Font Awesome for icons
+- Google Fonts for typography (Montserrat and Open Sans)

@@ -103,7 +103,7 @@ This document outlines the plan for rebuilding the Lab & Server website using HT
 - Set up navigation and footer components
 
 ### Phase 2: Content Implementation
-- Format and organize all content from export.md
+- Format and organize all content from content-refined.md
 - Implement all pages with proper content structure
 - Create tables, lists, and other content elements
 
